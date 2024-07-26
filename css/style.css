@@ -1,0 +1,30 @@
+/*Hoja de Estilos para el contador*/
+/*Selector Etiqueta*/
+body{
+    font-family: cursive;
+    background-color: brown;
+}
+/*Selector Etiqueta*/
+h2{
+
+}
+/*Selector Clase*/
+.year{
+
+}
+/*Selector Clase y ID*/
+.countdown #day{
+
+}
+/*Selector Clase y ID*/
+.countdown #hour{
+
+}
+/*Selector Clase y ID*/
+.countdown #minute{
+
+}
+/*Selector Clase y ID*/
+.countdown #second{
+
+}
