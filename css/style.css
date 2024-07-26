@@ -2,29 +2,70 @@
 /*Selector Etiqueta*/
 body{
     font-family: cursive;
-    background-color: brown;
+    background-color: rgb(165, 42, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
 /*Selector Etiqueta*/
 h2{
-
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 /*Selector Clase*/
 .year{
-
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 5rem;
+}
+/*Selector Clase*/
+.countdown {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: 100%;
+}
+/*Selector Clase y etiqueta*/
+.countdown div {
+    width: 150px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+}
+.countdown div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width:100%;
+    height: 35px;
+    bottom: -30px;
+    text-transform: uppercase;
+}
+/*Selector Clase y ID y pseudoclase*/
+.countdown #day::before{
+    content: "Dias";   
 }
 /*Selector Clase y ID*/
-.countdown #day{
-
+.countdown #hour::before{
+    content: "Horas";
 }
 /*Selector Clase y ID*/
-.countdown #hour{
-
+.countdown #minute::before{
+    content: "Minutos";
 }
 /*Selector Clase y ID*/
-.countdown #minute{
-
-}
-/*Selector Clase y ID*/
-.countdown #second{
-
+.countdown #second::before{
+    content: "Segundos";
 }
